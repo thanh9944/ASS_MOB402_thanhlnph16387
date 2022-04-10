@@ -20,7 +20,7 @@
     <% for (var i = 0; i < assData.length; i++) { %>
       <div class="col-5 col-sm-4">
 
-        <div style="width: 400px;height:300px ;background-image: url( '<%= assData[i].linkPhoto %>') ;background-size:cover; ">
+        <div style="width: 400px;height:300px ;background-image: url( '<%= assData[i].linkPhoto %>') ;background-size:cover;margin-bottom: 30px ">
           <form style="margin-left: 330px" method="post" action="/delete-car"
                 enctype="application/x-www-form-urlencoded">
             <input name="idCar" hidden value="<%= assData[i].id %>">
