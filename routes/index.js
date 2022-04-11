@@ -59,6 +59,7 @@ router.post('/ass-add', function (req, res, next) {
         }
 
         res.render('add');
+        alert("Add sucessfuly")
     })
 
 });
