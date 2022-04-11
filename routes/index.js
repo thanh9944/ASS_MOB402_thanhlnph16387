@@ -25,7 +25,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/add', function (req, res, next) {
-    res.render('add', {title: 'add'});
+    res.render('add');
 });
 router.get('/update', function (req, res, next) {
     res.render('update', {title: 'update'});
@@ -57,9 +57,9 @@ router.post('/ass-add', function (req, res, next) {
         } else {
             message = error
         }
-
+      console.log(message)
         res.render('add');
-        alert("Add sucessfuly")
+
     })
 
 });
